@@ -1,5 +1,7 @@
 # How the Popup should Display for Players.
 CPS Popup: "§c§lCPS: §r§a"
+# Enable the Popup for players automatically when they join.
+On Join: true
 # Message to send to players with cps.alerts permission.
 CPS Alerts: "§7[§cAlerts§7] §b{playername} §eis clicking §c{cps} §eCPS"
 # How long in between each CPS Alert
