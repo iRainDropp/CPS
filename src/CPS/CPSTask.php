@@ -42,7 +42,7 @@ class CPSTask extends Task
                 $p->sendTip($this->plugin->CPSMessage . $cps);
             }
             if($this->delay <time()){
-                if($this->plugin->realCPS[$playerName] >= 20){
+                if($this->plugin->realCPS[$playerName] >= 15){
                     foreach($this->plugin->getServer()->getOnlinePlayers() as $player){
                         if($player->hasPermission("cps.alerts")){
                             $message = str_replace("{playername}", $playerName, $this->plugin->cpsAlerts);
