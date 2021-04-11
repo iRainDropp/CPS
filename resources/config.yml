@@ -1,5 +1,5 @@
 CPS Popup: "§c§lCPS: §r§a"
-CPS Alerts: "§7[§cAlerts§7] §b{playername} §eis clicking §c20+ §eCPS"
+CPS Alerts: "§7[§cAlerts§7] §b{playername} §eis clicking §c{cps} §eCPS"
 CPS Alert Cooldown: 5
 CPS Limit: 20
 Enabled Popup: "§aYour CPS popup has been Enabled."
