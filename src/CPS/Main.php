@@ -36,6 +36,7 @@ class Main extends PluginBase implements Listener
     public $alertCooldown;
     public $tip = [];
     public $realCPS = [];
+    public $onJoin;
     public $cpsAmount;
 
     public function onEnable()
@@ -45,6 +46,7 @@ class Main extends PluginBase implements Listener
         $this->saveResource("config.yml");
         $this->config = new Config($this->getDataFolder(). "config.yml");
         $this->CPSMessage = $this->config->get("CPS Popup");
+        $this->onJoin = $this->config->get("On Join");
         $this->alertCooldown = $this->config->get("CPS Alert Cooldown");
         $this->EnabledMessage = $this->config->get("Enabled Popup");
         $this->cpsAmount = $this->config->get("Amount of CPS");
@@ -69,7 +71,7 @@ class Main extends PluginBase implements Listener
         $player = $event->getPlayer();
         $this->realCPS[$player->getName()] = 0;
         $this->tip[$player->getName()] = 0;
-        $this->Enabled[$event->getPlayer()->getName()] = true;
+        $this->Enabled[$event->getPlayer()->getName()] = $this->onJoin;
     }
 
     public function onDisconnect(PlayerQuitEvent $event){
