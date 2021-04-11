@@ -1,6 +1,12 @@
+//How the Popup should Display for Players.
 CPS Popup: "§c§lCPS: §r§a"
+//Message to send to players with cps.alerts permission.
 CPS Alerts: "§7[§cAlerts§7] §b{playername} §eis clicking §c{cps} §eCPS"
+//How long in between each CPS Alert
 CPS Alert Cooldown: 5
+//CPS Limit, all other hits after this amount will be CANCELLED!
 CPS Limit: 20
+//Popup enabled message.
 Enabled Popup: "§aYour CPS popup has been Enabled."
+//Popup disabled message.
 Disabled Popup: "§cYour CPS popup has been Disabled."
