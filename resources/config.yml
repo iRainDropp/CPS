@@ -6,6 +6,8 @@ CPS Alerts: "§7[§cAlerts§7] §b{playername} §eis clicking §c{cps} §eCPS"
 CPS Alert Cooldown: 5
 # CPS Limit, all other hits after this amount will be CANCELLED!
 CPS Limit: 20
+# Amount of CPS before the Alerts are triggered.
+Amount of CPS: 15
 # Popup enabled message.
 Enabled Popup: "§aYour CPS popup has been Enabled."
 # Popup disabled message.
