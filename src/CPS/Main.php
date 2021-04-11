@@ -47,7 +47,7 @@ class Main extends PluginBase implements Listener
         $this->CPSMessage = $this->config->get("CPS Popup");
         $this->alertCooldown = $this->config->get("CPS Alert Cooldown");
         $this->EnabledMessage = $this->config->get("Enabled Popup");
-        $this->cpsAmount = $this->config->get("How much CPS");
+        $this->cpsAmount = $this->config->get("Amount of CPS");
         $this->DisabledMessage = $this->config->get("Disabled Popup");
         $this->cpsAlerts = $this->config->get("CPS Alerts");
         $this->CPSLimit = $this->config->get("CPS Limit");
