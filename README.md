@@ -8,8 +8,11 @@ A fully customizable CPS plugin for PocketMine-MP servers.
 
 Features:
 CPS Limiter
+
 CPS Popup
+
 CPS Alerts
+
 Fully Configurable
 
 
