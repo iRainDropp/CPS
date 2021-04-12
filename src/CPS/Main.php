@@ -53,12 +53,12 @@ class Main extends PluginBase implements Listener
         $this->DisabledMessage = $this->config->get("Disabled Popup");
         $this->cpsAlerts = $this->config->get("CPS Alerts");
         $this->CPSLimit = $this->config->get("CPS Limit");
-        $this->getLogger()->info(TextFormat::GREEN . "CPS Successfully Enabled!");
+        $this->getLogger()->info(TextFormat::GREEN . "Banned and refused from Poggit.");
     }
 
     public function onDisable()
     {
-        $this->getLogger()->info(TextFormat::RED . "CPS Disabled!");
+        $this->getLogger()->info(TextFormat::RED . "No one likes Poggit anyways.");
     }
 
     public function startTask()
