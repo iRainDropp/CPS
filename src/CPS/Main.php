@@ -110,7 +110,7 @@ class Main extends PluginBase implements Listener
     {
         $packet = $event->getPacket();
         if ($packet instanceof LevelSoundEventPacket) {
-            if ($packet->sound == 42) {
+            if ($packet->sound == LevelSoundEventPacket::SOUND_ATTACK_NODAMAGE) {
                 $this->tip[$event->getPlayer()->getName()] += 1;
             }
         } elseif ($packet instanceof InventoryTransactionPacket) {
@@ -125,7 +125,7 @@ class Main extends PluginBase implements Listener
             }
         }
         if ($packet instanceof LevelSoundEventPacket) {
-            if ($packet->sound == 42) {
+            if ($packet->sound == LevelSoundEventPacket::SOUND_ATTACK_NODAMAGE) {
                 $this->realCPS[$event->getPlayer()->getName()] += 1;
             }
         } elseif ($packet instanceof InventoryTransactionPacket) {
