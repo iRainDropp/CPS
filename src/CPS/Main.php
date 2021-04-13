@@ -27,9 +27,9 @@ use pocketmine\event\entity\EntityDamageEvent;
 class Main extends PluginBase implements Listener
 {
     private $config;
-    private $CPSLimit;
     private $EnabledMessage;
     private $DisabledMessage;
+    public $CPSLimit;
     public $cpsAlerts;
     public $Enabled = [];
     public $CPSMessage;
