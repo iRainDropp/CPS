@@ -47,7 +47,7 @@ class CPSTask extends Task
                         if($player->hasPermission("cps.alerts")){
                             $message = str_replace("{playername}", $playerName, $this->plugin->cpsAlerts);
                             $message = str_replace("{cps}", $this->plugin->realCPS[$playerName], $message);
-                            $message = str_replace("20", "20+", $message);
+                            $message = str_replace($this->plugin->CPSLimit, $this->plugin->CPSLimit . "+", $message);
                             $player->sendMessage($message);
                         }
                         $this->delay = time() + $this->plugin->alertCooldown;
