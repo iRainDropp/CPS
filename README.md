@@ -14,6 +14,8 @@ CPS Popup
 
 CPS Alerts
 
+Discord Webhook
+
 Fully Configurable
 
 
