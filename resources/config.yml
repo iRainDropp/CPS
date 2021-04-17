@@ -1,0 +1,36 @@
+# How the Popup should Display for Players.
+CPS Popup: "§c§lCPS: §r§a"
+# Enable the Popup for players automatically when they join.
+On Join: true
+# Message to send to players with cps.alerts permission.
+CPS Alerts: "§7[§cAlerts§7] §b{playername} §eis clicking §c{cps} §eCPS"
+# How long in between each CPS Alert.
+CPS Alert Cooldown: 5
+# CPS Limit, all other hits after this amount will be CANCELLED!
+CPS Limit: 20
+# Amount of CPS before the Alerts are triggered.
+Amount of CPS: 15
+# Popup enabled message.
+Enabled Popup: "§aYour CPS popup has been Enabled."
+# Popup disabled message.
+Disabled Popup: "§cYour CPS popup has been Disabled."
+# Discord Webhook Settings
+Discord Webhook:
+  # Should the Webhook be enabled? true or false.
+  Enabled: true
+  # Your Webhook URL from your Discord server.
+  Webhook URL: ""
+  # The Embedded message that gets sent to the Webhook.
+  Embed Message: "**{playername}** is clicking **{cps}** CPS"
+  # The display name of the Webhook.
+  Name: "CPS Bot"
+  # The Webhook Avatar, if you do not want to set an avatar, please leave this option blank. If you want to have an avatar, please include the URL inside of ""! DO NOT INCLUDE "" IF YOU DO NOT WANT AN AVATAR!
+  # Example;
+  # Avatar:
+  Avatar: "https://i.imgur.com/DmJbCqA.png"
+  # Webhook Title, This appears above the Embed Message.
+  Title: "**[Alert]**"
+  # Webhook Footer.
+  Footer: "Made by iRainDrop"
+  # Webhook Color. You can use sites like https://www.hexcolortool.com/ to find your color, BE SURE TO INCLUDE "0x" in front of the Hex code.
+  Color: 0xFF0000
