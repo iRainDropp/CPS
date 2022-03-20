@@ -13,7 +13,7 @@ CPS:
 Discord Webhook:
   Enabled: true
   Display Name: "CPS Bot"
-  Webhook URL: "https://discord.com/api/webhooks/829659983611953192/Lkwsac0he9M0D9Sq7qfJB6APlk31_z0tJVz6mYytmUvFuxtTUd-pNUhv0zTfDTntbVxG"
+  Webhook URL: ""
   Avatar: "https://cdn-icons-png.flaticon.com/512/147/147144.png"
   Title: "**[Alert]**"
   Description: "{player} is currently clicking {cps} CPS."
