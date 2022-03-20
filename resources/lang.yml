@@ -1,0 +1,7 @@
+CPS:
+  Enabled: "§aYou have Enabled your CPS popup."
+  Already Enabled: "§cYou already have your CPS popup Enabled."
+  Disabled: "§cYou have Disabled your CPS popup."
+  Already Disabled: "§cYou already have your CPS popup Disabled."
+  Usage: "§cUsage: /cps <on/off>"
+  Players Only: "§cThis command is for player use only."

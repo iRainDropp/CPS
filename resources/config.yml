@@ -1,0 +1,21 @@
+CPS:
+  # Should /cps be enabled by default when a player joins?
+  On Join: true
+  Popup: "§eCPS: {cps}"
+  # Limit of CPS before hits get cancelled.
+  Limit: 20
+  Alerts: "§7[§cAlerts§7] §b{player} §eis clicking §c{cps} §eCPS"
+  Alerts Permission: "cps.alerts"
+  # Cooldown between each Alert to keep it from spamming.
+  Alert Cooldown: 10
+  # How much CPS should trigger the Alerts?
+  Trigger Amount: 15
+Discord Webhook:
+  Enabled: true
+  Display Name: "CPS Bot"
+  Webhook URL: "https://discord.com/api/webhooks/829659983611953192/Lkwsac0he9M0D9Sq7qfJB6APlk31_z0tJVz6mYytmUvFuxtTUd-pNUhv0zTfDTntbVxG"
+  Avatar: "https://cdn-icons-png.flaticon.com/512/147/147144.png"
+  Title: "**[Alert]**"
+  Description: "{player} is currently clicking {cps} CPS."
+  Color: 0xFF0000
+  Footer: "Made by iRainDrop"
