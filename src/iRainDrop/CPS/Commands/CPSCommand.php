@@ -11,7 +11,9 @@ use pocketmine\plugin\PluginOwned;
 
 class CPSCommand extends Command implements PluginOwned
 {
-    public function __construct(private Main $plugin) { }
+    public function __construct(private Main $plugin) {
+        parent::__construct("cps", "Enable or disable the CPS popup.");
+    }
     
     public function getOwningPlugin(): Plugin { return $this->plugin; }
     
