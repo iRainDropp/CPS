@@ -81,9 +81,11 @@ class EventListener implements Listener
         if($packet instanceof InventoryTransactionPacket){
             if($packet->trData instanceof UseItemOnEntityTransactionData){
                 $this->addCPS($event->getOrigin()->getPlayer());
+                if(isset(Main::$cpsEnabled[$event->getOrigin()->getPlayer()->getName()])){
                 if(Main::$cpsEnabled[$event->getOrigin()->getPlayer()->getName()] === true){
                     $popup = str_replace("{cps}", $this->getCPS($event->getOrigin()->getPlayer()), Main::$config->getNested("CPS.Popup"));
                     $event->getOrigin()->getPlayer()->sendPopup($popup);
+                    }
                 }
                 if($this->getCPS($event->getOrigin()->getPlayer()) >= Main::$config->getNested("CPS.Trigger Amount")){
                     $players = server::getInstance()->getOnlinePlayers();
