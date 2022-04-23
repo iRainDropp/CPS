@@ -14,7 +14,7 @@ class Main extends PluginBase{
 
     function onEnable(): void{
         $this->getServer()->getPluginManager()->registerEvents(new EventListener, $this);
-        $this->getServer()->getCommandMap()->register("CPS", new CPSCommand ("cps", "Enable or disable the CPS popup."));
+        $this->getServer()->getCommandMap()->register("CPS", new CPSCommand ($this));
         $this->saveresource("config.yml");
         $this->saveresource("lang.yml");
         self::$config = new Config($this->getDataFolder() . "config.yml");
