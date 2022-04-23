@@ -7,9 +7,14 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
 use pocketmine\utils\TextFormat;
+use pocketmine\plugin\PluginOwned;
 
-class CPSCommand extends Command
+class CPSCommand extends Command implements PluginOwned
 {
+    public function __construct(private Main $plugin) { }
+    
+    public function getOwningPlugin(): Plugin { return $this->plugin; }
+    
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
         if($sender instanceof Player){
