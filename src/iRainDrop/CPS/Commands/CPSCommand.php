@@ -15,7 +15,8 @@ class CPSCommand extends Command implements PluginOwned
         parent::__construct("cps", "Enable or disable the CPS popup.");
     }
     
-    public function getOwningPlugin(): Plugin { return $this->plugin; }
+    public function getOwningPlugin(): Main
+    { return $this->plugin; }
     
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
