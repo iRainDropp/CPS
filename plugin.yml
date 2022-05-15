@@ -1,6 +1,6 @@
 ---
 name: CPS
-version: 2.0
+version: 2.1
 main: iRainDrop\CPS\Main
 api: 4.2.4
 mcpe-protocol: 503
